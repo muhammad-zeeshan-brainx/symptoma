@@ -225,29 +225,37 @@
     <h2>3. Alcance y Propósito</h2>
     <p>Esta política se aplica a la aplicación móvil Symptoma, que proporciona orientación médica basada en inteligencia artificial. La app no requiere registro de usuario y procesa los datos localmente o a través de canales seguros cifrados. No utilizamos identificadores persistentes ni creamos perfiles de usuario.</p>
     <h2>4. Información Que No Recopilamos</h2>
-    <p>Symptoma no recopila ni almacena información personal identificable (PII), como:</p>
+    <p>Symptoma no recopila ni almacena ningún tipo de información de identificación personal (PII) que pueda identificarle como individuo, incluyendo:</p>
     <ul>
-      <li>Nombres, direcciones de correo electrónico o información de contacto</li>
-      <li>Direcciones IP, ID de dispositivo o ubicación</li>
-      <li>Datos clínicos, biométricos, financieros o de comportamiento</li>
-      <li>Identificadores de publicidad o perfiles de analítica</li>
+      <li>Nombres, direcciones de correo electrónico o datos de contacto</li>
+      <li>Direcciones IP o geolocalización (ubicación precisa)</li>
+      <li>Registros clínicos o historial médico más allá de lo que usted introduzca</li>
+      <li>Datos biométricos</li>
+      <li>Información financiera (el procesamiento de pagos es gestionado por Apple/Google)</li>
     </ul>
+    <p><strong>Nota:</strong> Aunque no recopilamos información de identificación personal, la aplicación utiliza servicios de terceros (OpenAI, Superwall, Firebase) que pueden procesar datos para la funcionalidad de la app, tal como se describe en la Sección 8.</p>
     <h2>5. Uso de la Información Ingresada</h2>
-    <p>Los textos introducidos por el usuario (síntomas o comentarios) se procesan de forma segura en tiempo real mediante la API de OpenAI. Esta información:</p>
+    <p>El texto ingresado por el usuario (por ejemplo, síntomas o inquietudes relacionadas con la salud) se procesa de forma segura para generar respuestas del chatbot mediante la API de OpenAI. Estos datos:</p>
     <ul>
-      <li>No se vincula a ningún perfil de usuario</li>
-      <li>No se almacena en servidores externos</li>
-      <li>Permanece en su dispositivo y se elimina al borrar el historial de chat o desinstalar la app</li>
+      <li>Se transmiten temporalmente a los servidores de OpenAI para generar las respuestas.</li>
+      <li>No están vinculados a ningún perfil o cuenta de usuario.</li>
+      <li>No se almacenan de forma permanente en los servidores de OpenAI (se procesan en tiempo real).</li>
+      <li>Permanecen almacenados localmente en su dispositivo y pueden eliminarse borrando el historial del chat o desinstalando la aplicación.</li>
     </ul>
+    <p>OpenAI procesa estos datos de acuerdo con su política de privacidad (<a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a>)</p>
     <h2>6. Cookies y Tecnologías de Rastreo</h2>
     <p>Symptoma no utiliza:</p>
     <ul>
       <li>Cookies</li>
-      <li>Scripts de seguimiento</li>
-      <li>SDKs de análisis</li>
-      <li>Tecnologías publicitarias</li>
+      <li>SDKs de análisis de terceros</li>
+      <li>Rastreadores de publicidad o marketing</li>
     </ul>
-    <p>El uso de la app es completamente anónimo.</p>
+    <p><strong>Servicios de terceros:</strong></p>
+    <ul>
+      <li><strong>OpenAI:</strong> Se utiliza para las respuestas del chat impulsadas por IA. Los mensajes se envían a la API de OpenAI, pero no se almacenan de forma permanente ni se usan para seguimiento. Consulte la política de privacidad de OpenAI para más detalles.</li>
+      <li><strong>Superwall:</strong> Se utiliza para la gestión de suscripciones. Genera identificadores de usuario anónimos únicamente para la funcionalidad de suscripción, no para seguimiento ni publicidad.</li>
+      <li><strong>Firebase Remote Config (solo en Android):</strong> Se utiliza para gestionar la configuración de la aplicación de forma remota. Puede recopilar identificadores del dispositivo únicamente con fines de configuración.</li>
+    </ul>
     <h2>7. Compras Dentro de la App y Suscripciones</h2>
     <p>Symptoma ofrece un plan de suscripción mensual a través de Apple App Store y Google Play. No almacenamos información de pago.</p>
     <p><strong>Condiciones de suscripción:</strong></p>
@@ -265,7 +273,14 @@
     <p><strong>Reembolsos:</strong> Se gestionan exclusivamente a través de Apple o Google, según sus políticas.</p>
     <p><strong>Restaurar compras:</strong> Las compras pueden restaurarse en otros dispositivos con la misma cuenta.</p>
     <h2>8. Compartición y Transferencias de Datos</h2>
-    <p>Symptoma no comparte, vende ni transfiere datos del usuario. Si se hace clic en un enlace externo, se abrirá un sitio ajeno bajo su propia política de privacidad.</p>
+    <p>Symptoma comparte datos con los siguientes proveedores de servicios externos para la funcionalidad de la aplicación:</p>
+    <ul>
+      <li><strong>OpenAI:</strong> El texto ingresado por el usuario (síntomas/información de salud) se envía a la API de OpenAI para generar respuestas del chat. Estos datos se procesan en tiempo real y no se almacenan de forma permanente en OpenAI. OpenAI no utiliza estos datos con fines publicitarios ni de seguimiento.</li>
+      <li><strong>Superwall:</strong> El estado de la suscripción y los identificadores de usuario anónimos se comparten con Superwall únicamente para la gestión de suscripciones. Superwall no utiliza estos datos para publicidad ni seguimiento.</li>
+      <li><strong>Firebase (solo Android):</strong> Los datos de configuración del dispositivo pueden compartirse con Firebase Remote Config para la gestión de la configuración de la aplicación.</li>
+    </ul>
+    <p>Symptoma no vende datos de los usuarios ni los comparte con intermediarios de datos (data brokers). Todos los servicios de terceros se utilizan exclusivamente para la funcionalidad de la aplicación, no para fines publicitarios ni de seguimiento.</p>
+    <p>Si el usuario hace clic en un artículo médico o enlace dentro del chatbot, puede ser redirigido a un sitio externo. Symptoma no controla ni asume responsabilidad por las prácticas de privacidad de sitios externos.</p>
     <h2>9. Derechos del Usuario</h2>
     <p>Como no recopilamos datos personales, los derechos habituales (acceso, rectificación, eliminación) no aplican. Sin embargo, puede escribirnos a <a href="mailto:info@panther.ad">info@panther.ad</a> para cualquier consulta.</p>
     <h2>10. Privacidad Infantil</h2>

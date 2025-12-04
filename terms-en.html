@@ -224,6 +224,12 @@
     </ul>
     <h2>2. Nature and Purpose of the Service</h2>
     <p>Symptoma is a text-based medical support app powered by artificial intelligence (AI). It provides general guidance about health symptoms entered by users. The AI engine is powered by OpenAI's API (e.g., ChatGPT) and operates without human medical review.</p>
+    <p><strong>Third-Party Services:</strong></p>
+    <ul>
+      <li>OpenAI: Provides AI-powered chat responses</li>
+      <li>Superwall: Manages subscription and payment processing</li>
+      <li>Firebase Remote Config (Android only): Manages app configuration remotely</li>
+    </ul>
     <div class="warning-box">
       <p><strong>Important:</strong></p>
       <ul>
@@ -277,7 +283,7 @@
     <p>Downgrades take effect after the current billing cycle ends.</p>
     <p>No refunds or partial credits are offered for unused time.</p>
     <h3>5.6 Restore Purchases</h3>
-    <p>Subscriptions can be restored across devices using the same Apple ID or Google account via the "Restore Purchase" button on the paywall.</p>
+    <p>Subscriptions can be restored across devices using the same Apple ID or Google account via the "Restore Purchase" button in the app settings or paywall. Restoration is subject to Apple/Google policies and requires an active internet connection.</p>
     <h2>6. Prohibited Uses</h2>
     <p>Users agree not to:</p>
     <ul>
@@ -297,9 +303,15 @@
     </ul>
     <p>Use of the app is entirely at your own risk.</p>
     <h2>9. Data Protection</h2>
-    <p>Symptoma does not collect personal data.</p>
-    <p>Chat content is stored locally on your device.</p>
-    <p>Refer to our <a href="https://symptoma-theta.vercel.app/privacy-en.html" target="_blank">Privacy Policy</a> for full details.</p>
+    <p>Symptoma processes user-entered text (symptoms and health information) to provide AI-powered responses. This data:</p>
+    <ul>
+      <li>Is stored locally on your device in encrypted storage</li>
+      <li>Is transmitted to OpenAI's API to generate chat responses (processed in real-time, not stored permanently by OpenAI)</li>
+      <li>Is used by Superwall for subscription management (anonymous user IDs only)</li>
+      <li>May be processed by Firebase Remote Config (Android only) for app configuration</li>
+    </ul>
+    <p>Symptoma does not collect personally identifiable information (PII) such as names, email addresses, or contact details. However, health-related text you enter is processed by third-party services (OpenAI, Superwall, Firebase) for app functionality.</p>
+    <p>Refer to our <a href="https://symptoma-theta.vercel.app/privacy-en.html" target="_blank">Privacy Policy</a> for complete details on data handling, third-party services, and your rights.</p>
     <h2>10. Termination</h2>
     <p>You may terminate your use at any time by uninstalling the app.</p>
     <p>Panther Inversions may restrict access or revoke subscriptions for violations of these Terms or applicable law</p>
@@ -316,7 +328,15 @@
     <p>By using Symptoma or subscribing to its services, you agree to these Terms & Conditions / EULA.</p>
     <p>Terms & Conditions / EULA: <a href="https://symptoma-theta.vercel.app/terms-en.html" target="_blank">https://symptoma-theta.vercel.app/terms-en.html</a></p>
     <p>Privacy Policy: <a href="https://symptoma-theta.vercel.app/privacy-en.html" target="_blank">https://symptoma-theta.vercel.app/privacy-en.html</a></p>
-    <h2>15. Contact</h2>
+    <h2>15. Third Party Services:</h2>
+    <p>Symptoma uses the following third-party services:</p>
+    <ul>
+      <li><strong>OpenAI:</strong> Processes user-entered text to generate AI responses. Data is transmitted securely and processed according to OpenAI's privacy policy (<a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a>). OpenAI does not store your data permanently or use it for advertising.</li>
+      <li><strong>Superwall:</strong> Manages subscription processing and payment handling. Superwall generates anonymous user IDs for subscription functionality only. Superwall does not use your data for advertising or tracking. See Superwall's privacy policy for details.</li>
+      <li><strong>Firebase Remote Config (Android only):</strong> Manages app configuration remotely. May collect device identifiers for configuration purposes only, not for tracking or advertising.</li>
+    </ul>
+    <p>All third-party services are used solely for app functionality. Symptoma does not sell or share your data with data brokers.</p>
+    <h2>16. Contact</h2>
     <div class="contact-box">
       <p>For questions about these Terms, contact us at:</p>
       <p>📧 <a href="mailto:info@panther.ad">info@panther.ad</a></p>
